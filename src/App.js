@@ -63,7 +63,12 @@ function App() {
     fetchImageUrls();
   }, [img]);
 
-  console.log(imgUrls, "urlImages");
+  const buttonStyle = {
+    backgroundColor: 'blue',
+    color: 'white',
+    padding: '10px 20px',
+    borderRadius: '5px',
+  };
 
   return (
     <div className="">
@@ -96,7 +101,7 @@ function App() {
             name="myfile"
           />
         </div>
-        <button onClick={handleClik}>Upload</button>
+        <button onClick={handleClik} style={buttonStyle}>Upload</button>
       </div>
       <Hondas />
       {/* <GetFotoes/> */}
